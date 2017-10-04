@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title></title>
+		<meta charset="UTF-8">
+    <meta name="author" content="Mauricio Campuzano">
+    <meta name="description" content="Pomodoro Timer">
+    <link rel="shortcut icon" href="./_img/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./main.css" rel="stylesheet">
+    <!-- <link href="_css/header.css" rel="stylesheet"> -->
+    <!-- <link href="_css/nav.css" rel="stylesheet"> -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css"> -->
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		
+		<link href="https://fonts.googleapis.com/css?family=Audiowide|Bungee+Hairline|Bungee+Outline|Megrim|Nova+Square|Press+Start+2P|Patua+One|Code|Kelly+Slab|Share+Tech+Mono|Space+Mono|VT323" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/css/foundation.min.css">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	</head>
+
+	<body>
+	
+		<header class="container-fluid">
+			<div class="row text-center">
+				<div class="col-md-12">
+					<h1 class="header">Pomodoro Timer</h1>
+				</div>
+			</div>
+		</header>
+
+		<section class="container-fluid">
+			<div class="row">
+				
+				<div class="col-md-1 col-lg-2"></div>
+				
+					<!-- Main clock app -->
+					<div class="col-md-10 col-lg-8">
+
+						<!-- Timer/Countdown -->
+						<div class="container-fluid">
+							<div class="row section">
+								<div class="col-md-12">
+
+									<!-- Pomodoro display -->
+									<div class="row clock text-center">	
+										<div class="col-md-12 col-sm-12 text-center digital">
+											0:00
+										</div>												
+									</div>
+									
+									<!-- start/stop button -->
+									<div class="row">
+										<div class="col-sm-6 col-md-6 text-center">
+											<button type="button" class="btn btn-success btn-block text-center analog">
+												Go/Stop
+											</button>
+										</div>
+										<div class="col-sm-6 col-md-6 text-center">
+											<button type="button" class="btn btn-warning btn-block text-center reset">
+												Reset
+											</button>
+										</div>						
+									</div>
+
+									<!-- Pomodoro controls -->
+									<div class="row controls">
+										
+										<!-- session btns -->
+										<div class="col-md-6 col-sm-6 col-xs-12 text-center">
+
+											
+												<div class="row">
+													<h3 class="col-md-12 session">Pomodoros</h3>
+												</div>
+
+												<div class="btn-group">
+													<button type="button" class="btn btn-primary" id="upSL">
+														<i class="fa fa-angle-double-up fa-lg"  id="upSL-FA"></i>
+													</button>
+													<button type="button" class="btn btn-primary" id="timeSL">25</button>
+													<button type="button" class="btn btn-primary" id="downSL">
+														<i class="fa fa-angle-double-down fa-lg "  id="downSL-FA"></i>
+													</button>
+												</div>
+											
+
+										</div>
+										
+										<!-- break btns -->
+										<div class="col-md-6 col-sm-6 col-xs-12 text-center">
+
+											
+												<div class="row">
+													<h3 class="col-md-12 break">Breaks</h3>
+												</div>
+												<div class="btn-group">
+													<button type="button" class="btn btn-primary" id="upBL">											
+														<i class="fa fa-angle-double-up fa-lg" id="upBL-FA"></i>
+													</button>
+													<button type="button" class="btn btn-primary" id="timeBL">5</button>
+													<button type="button" class="btn btn-primary" id="downBL">											
+														<i class="fa fa-angle-double-down fa-lg" id="downBL-FA"></i>
+													</button>
+												</div>
+											
+
+										</div>
+										
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+						<div class="line-break"></div>
+
+						<!-- explanation of pomodoro -->
+						<div class="container-fluid">
+							<div class="row explain">
+								<div class="col-sm-2 col-md-2"></div>
+								<div class="col-sm-8 col-md-8">
+									
+										<h4 class="explain-title text-center">What is the Pomodoro Technique?</h4>
+										<div class="row explain-section hide">
+											<h6 class="subtitle "><b>po·mo·do·ro</b>
+												<ol class="tab">
+													<span class="explText"><em>/ˌpäməˈdôrō/</em> (adjective): </span>
+													<li class="dblTab explText">A variety of pear-shaped tomato from Italy.</li>
+													<li class="dblTab explText">A time management method that uses a timer to break down work into intervals, separated by short breaks. These intervals are named pomodoros, after the tomato-shaped kitchen timer that Francesco Cirillo used as a university student.</li>
+												</ol>
+											</h6>
+											
+											<a href="https://en.wikipedia.org/wiki/Pomodoro_Technique" class="card-link" target="_blank">Wiki: Pomodoro Technique</a> <br/>
+											<a href="https://youtu.be/CT70iCaG0Gs" class="card-link" target="_blank">Video tutorial: Pomodoro</a>
+										</div>
+									
+								</div>
+								<div class="col-sm-2 col-md-2"></div>
+							</div>
+						</div>
+
+					</div>
+					
+				<div class="col-md-1 col-lg-2"></div>
+				
+			</div>
+		</section>
+
+		<script src="./script.js" type="text/javascript" ></script>
+
+	</body>
+</html>
